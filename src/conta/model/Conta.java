@@ -1,6 +1,8 @@
 package conta.model;
 
-public class Conta {
+import conta.util.Cores;
+
+public abstract class Conta {
 
 	private int numero;
 	private int agencia;
@@ -87,10 +89,10 @@ public class Conta {
 			
 		}
 		
-		System.out.println("\n\n***********************************************************");
-		System.out.println("Dados da Conta:");
-		System.out.println("***********************************************************");
-		System.out.println("Número da Conta: " + this.numero);
+		System.out.println(Cores.TEXT_PURPLE_BOLD_BRIGHT + "\n\n*****************************************************");
+		System.out.println(Cores.TEXT_WHITE_BOLD_BRIGHT +"Dados da Conta:");
+		System.out.println(Cores.TEXT_PURPLE_BOLD_BRIGHT + "*****************************************************");
+		System.out.println(Cores.TEXT_WHITE_BRIGHT + "Número da Conta: " + this.numero);
 		System.out.println("Agência: " + this.agencia);
 		System.out.println("Tipo da Conta: " + tipo);
 		System.out.println("Titular: " + this.titular);
